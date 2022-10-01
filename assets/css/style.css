@@ -1,13 +1,25 @@
 * {
     box-sizing: border-box;
+    transition: all 0.3s;
     padding: 0;
     margin: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
 }
 
 body {
     background-color: #d9dcd6;
 }
-
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -22,6 +34,7 @@ body {
 
 .header h1 .seo {
     color: #d9dcd6;
+
 }
 
 .header div {
@@ -44,6 +57,12 @@ body {
 a {
     color: #ffffff;
     text-decoration: none;
+
+}
+
+a:hover {
+    color: #000000;
+
 }
 
 p {
@@ -64,7 +83,7 @@ p {
     margin-right: 25px;
 }
 
-.float-right {
+.float-right  {
     float: right;
     margin-left: 25px;
 }
@@ -75,7 +94,8 @@ p {
     margin-left: 20px;
 }
 
-.benefits {
+
+.asideBar {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -84,7 +104,13 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+   
 }
+.benefits{
+
+    justify-self: justify;
+}
+
 
 .benefit-lead {
     margin-bottom: 32px;
@@ -198,3 +224,29 @@ p {
 .footer h2 {
     font-size: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .benefits {
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        float: none;
+        text-align: center;
+        display: flex;
+    }
+
+    .benefit {
+        margin: 10px 0;
+        flex: 1;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .hero {
+        height: 200px;
+    }
+}
+    
