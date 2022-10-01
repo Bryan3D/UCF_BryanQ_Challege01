@@ -57,11 +57,15 @@ body {
 a {
     color: #ffffff;
     text-decoration: none;
+    
+    text-align: center;
 
 }
 
 a:hover {
-    color: #000000;
+    
+    background-color: rgb(47, 47, 47);
+    
 
 }
 
@@ -99,17 +103,13 @@ p {
     margin-right: 20px;
     padding: 20px;
     clear: both;
-    float: right;
     width: 20%;
-    height: 100%;
+    height: 100% auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
    
 }
-.benefits{
 
-    justify-self: justify;
-}
 
 
 .benefit-lead {
@@ -170,7 +170,8 @@ p {
 }
 
 .online-reputation-management {
-    margin-bottom: 20px;
+    
+    margin-bottom: 30px;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -178,8 +179,9 @@ p {
     color: #ffffff;
 }
 
+
 .social-media-marketing {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -225,28 +227,97 @@ p {
     font-size: 20px;
 }
 
-@media screen and (max-width: 768px) {
-    .benefits {
-        margin: 0;
-        padding-left: 0;
-        padding-right: 0;
-        width: 100%;
-        float: none;
-        text-align: center;
-        display: flex;
+#container{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:stretch;
+    
+}
+
+aside{
+    width:20%;
+    height:auto;
+    margin-left: 20px;
+    background-color:#2589bd;
+    color:#ffffff;
+    
+}
+
+.container-1 article{
+    margin-left: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+    /* add @media Screen to fit all for small screens */
+@media all and (max-width:768px){
+    
+    .header-top{
+        display:flex;
+        background-color:#00486e;
+        align-content: flex-start;
+        
     }
 
-    .benefit {
-        margin: 10px 0;
-        flex: 1;
+
+    .header ul{
+
+        display:inline-block;
     }
 
-    .content {
-        margin-left: 0;
+    .header a{
+
+        display:flex;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size:14px
+    }
+    
+       
+    .container{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        /* align-items:stretch; */
+    }
+    .asideBar{
+        display:block;
+        width:25%;
+        flex-basis: auto;
+        justify-content:center;
+        margin-left:10px;
+       
     }
 
-    .hero {
-        height: 200px;
+    .container-1 article{
+        display:inline-flex;
+        flex-wrap:wrap;
+        margin-left: 20px;
+        margin-bottom: 2rem;
+        height: 100% auto;
+    }
+    .container-1 article img{
+        width:100%;
+        height:100%;
+    }
+    .container-1 article h2{
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    .content{
+        width:50%;
+    }
+    .hero{
+        height:400px;
+    }
+    .search-engine-optimization{
+        height:400px;
+    }
+    .online-reputation-management{
+        height:400px;
+    }
+    .social-media-marketing{
+        height:400px;
     }
 }
-    

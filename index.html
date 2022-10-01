@@ -8,7 +8,8 @@
 
   <body>
     <!-- Header of the page -->
-    <header>
+    <header class="header-top">
+
       <!-- Top navigation links  -->
       <nav>
         <div class="header">
@@ -31,15 +32,14 @@
         </div>
       </nav>
     </header>
-
+    <section>   
     <!-- Hero section -->
     <div class="hero"></div>
     <div class="content"></div>
-
-    <!-- Main content of the page -->
-
-    <main>
-      <!-- Search engine optimization div -->
+    </section>
+    
+    <div id="container"> <!-- Main content of the page -->
+    <main class = "container-1">        
       <article
         id="search-engine-optimization"
         class="search-engine-optimization"
@@ -107,17 +107,18 @@
           </p>
         </div>
       </article>
+    
+    </main>
 
-      <!-- Right Bar Benefits-->
-
-      <aside class="asideBar">
+    <!-- Right Side Bar -->
+    <aside id= "container-2"class="asideBar">
         <div class="benefit-lead">
           <h3>Lead Generation</h3>
 
           <!-- Lead generation image icon  -->
           <img
             src="./assets/images/lead-generation.png"
-            alt="Lead Generation">
+            alt="Lead Generation" class=" img-bar">
 
           <!-- Lead generation description -->
           <p>
@@ -132,7 +133,7 @@
           <!-- Brand awareness image icon  -->
           <img
             src="./assets/images/brand-awareness.png"
-            alt="Brand awareness">
+            alt="Brand awareness" class=" img-bar">
 
           <!-- Brand awareness description -->
           <p>
@@ -147,7 +148,7 @@
           <!-- Cost management image icon  -->
           <img
             src="./assets/images/cost-management.png"
-            alt="Cost management">
+            alt="Cost management" class=" img-bar">
 
           <!-- Cost management description -->
           <p>
@@ -156,12 +157,13 @@
           </p>
         </div>
       </aside>
-    </main>
-
+    </div><!-- End of main content -->
+    
+    
     <!-- Footer of the page -->
     <footer class="footer">
       <div>
-        <!-- Footer navigation links  -->
+        <!-- This page is by  -->
         <h2>Made with ❤️️ by Horiseon</h2>
 
         <p>&copy; 2019 Horiseon Social Solution Services, Inc.</p>
